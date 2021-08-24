@@ -1,3 +1,7 @@
+// contrasena para push en git
+// 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
+
+
 //este es nuestro archivo principal de front
 
 // importas la statusbar de el paquete expo-status-bar
@@ -10,26 +14,19 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import ConfirmarNumero from './src/pantallas/cuenta/ConfirmarNumero';
 
+import TiendaStack  from './src/navegacion/TiendaStack';
 
 import MiDatos from './src/pantallas/cuenta/MiDatos';
 
+import  RutasAutenticadas  from "./src/navegacion/RutasAutenticadas";
+
+//<RutasAutenticadas/>
 
 /* export default los componentes inican con letras mayusculas
 , se le pone el mismo nombre de la clase o componente */
 export default function App() {
   return ( 
-    <View style = {styles.container }>
-      <StatusBar />
-      <MiDatos/>
-    </View>
+    <RutasAutenticadas/>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FF5733',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
