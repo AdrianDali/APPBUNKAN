@@ -10,7 +10,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 //la etiqueta view es como div en html
 //stylesheet es la hoja de estilos 
-import { StyleSheet, Text, View } from 'react-native';
+
 
 import ConfirmarNumero from './src/pantallas/cuenta/ConfirmarNumero';
 
@@ -20,13 +20,15 @@ import MiDatos from './src/pantallas/cuenta/MiDatos';
 
 import  RutasAutenticadas  from "./src/navegacion/RutasAutenticadas";
 
+import  RutasNoAutenticadas  from "./src/navegacion/RutasNoAutenticadas";
+
 //<RutasAutenticadas/>
 
 /* export default los componentes inican con letras mayusculas
 , se le pone el mismo nombre de la clase o componente */
 export default function App() {
   return ( 
-    <RutasAutenticadas/>
+    <RutasNoAutenticadas/>
   );
 }
 
